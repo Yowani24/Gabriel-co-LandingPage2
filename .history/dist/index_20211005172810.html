@@ -130,19 +130,17 @@
     </section>
 
     <section>
-        <div class="md:tw-w-8/12 md:tw-mx-auto">
-            <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop By Style</h1>
+        <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop By Style</h1>
 
-            <div id="shopByStyle" class="tw-flex tw-justify-center tw-flex-wrap">
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center" v-for="data in images">
-                    <img class="tw-w-16 md:tw-w-20" :src="data.ima" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">{{data.desc}}</p>
-                </div>
+        <div id="shopByStyle" class="tw-flex tw-justify-center tw-flex-wrap">
+            <div class="tw-m-2 md:tw-mx-4 tw-flex tw-flex-col tw-justify-center tw-items-center" v-for="data in images">
+                <img class="tw-w-16 md:tw-w-20" :src="data.ima" alt="">
+                <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-4">{{data.desc}}</p>
             </div>
+        </div>
 
-            <div class="tw-flex tw-justify-center tw-py-3 md:tw-mt-5">
-                <button class="tw-border tw-border-gray-600 tw-font-bold tw-text-gray-600 tw-py-3 tw-px-10 tw-rounded-md tw-text-xs md:tw-text-base md:tw-font-semibold">Shop All Styles</button>
-            </div>
+        <div class="tw-flex tw-justify-center tw-py-3 md:tw-mt-5">
+            <button class="tw-border tw-border-gray-600 tw-font-bold tw-text-gray-600 tw-py-3 tw-px-10 tw-rounded-md tw-text-xs md:tw-text-base md:tw-font-semibold">Shop All Styles</button>
         </div>
     </section>
 
