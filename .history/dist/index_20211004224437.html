@@ -129,18 +129,28 @@
         </div>
     </section>
 
+    <section class="md:tw-mt-14" id="Shop_by_styles">
+        <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop by Style</h1>
+        <div class="BraceletSlide">
+            <div class="tw-border tw-p-1 tw-m-2 tw-text-center" v-for="item in items">
+                <img class="tw-mb-2 tw-w-full" :src="item.ima" alt="Bracelet">
+                <h5 class="tw-text-xs md:tw-text-2xl">{{item.title}}</h5>
+            </div>
+        </div>
+
+        <div class="tw-flex tw-justify-center tw-py-3 md:tw-mt-5">
+            <button class="tw-border tw-border-gray-600 tw-font-bold tw-text-gray-600 tw-py-3 tw-px-10 tw-rounded-md tw-text-xs md:tw-text-base md:tw-font-semibold">Shop All Styles</button>
+        </div>
+    </section>
+
     <section>
-        <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop By Style</h1>
+        <h1 class="tw-text-center tw-text-2xl tw-mb-10">Shop By Style</h1>
 
         <div id="shopByStyle" class="tw-flex tw-justify-center tw-flex-wrap">
             <div class="tw-m-2 md:tw-mx-4 tw-flex tw-flex-col tw-justify-center tw-items-center" v-for="data in images">
                 <img class="tw-w-16 md:tw-w-20" :src="data.ima" alt="">
                 <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-4">{{data.desc}}</p>
             </div>
-        </div>
-
-        <div class="tw-flex tw-justify-center tw-py-3 md:tw-mt-5">
-            <button class="tw-border tw-border-gray-600 tw-font-bold tw-text-gray-600 tw-py-3 tw-px-10 tw-rounded-md tw-text-xs md:tw-text-base md:tw-font-semibold">Shop All Styles</button>
         </div>
     </section>
 
@@ -565,9 +575,9 @@
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
-            arrows:false,
-            // prevArrow:"<img class='tw-absolute tw-z-50 tw-bottom-[-70px] lg:tw-bottom-[-90px] tw-left-24 md:tw-left-24 lg:tw-left-48 tw-w-12 md:tw-w-16 a-left control-c prev slick-prev' src='./images/leftarrow.svg'>",
-            // nextArrow:"<img class='tw-absolute tw-z-50 tw-bottom-[-70px] lg:tw-bottom-[-90px] tw-left-44 md:tw-left-48 lg:tw-left-64 tw-w-12 md:tw-w-16 a-right control-c next slick-next' src='./images/rightarrow.svg'>",
+            arrows:true,
+            prevArrow:"<img class='tw-absolute tw-z-50 tw-bottom-[-70px] lg:tw-bottom-[-90px] tw-left-24 md:tw-left-24 lg:tw-left-48 tw-w-12 md:tw-w-16 a-left control-c prev slick-prev' src='./images/leftarrow.svg'>",
+            nextArrow:"<img class='tw-absolute tw-z-50 tw-bottom-[-70px] lg:tw-bottom-[-90px] tw-left-44 md:tw-left-48 lg:tw-left-64 tw-w-12 md:tw-w-16 a-right control-c next slick-next' src='./images/rightarrow.svg'>",
             responsive: [
                 {
                     breakpoint: 1024,
