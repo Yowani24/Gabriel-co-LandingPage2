@@ -384,7 +384,6 @@
 
     </section>
 
-
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script>
         var app = new Vue({
@@ -446,11 +445,11 @@
             el:'#bestSellers',
             data: {
                 items: [
-                    {ima:'./images/Catalina.jpg',title:'Catalina', desc:'Twisted Diamond Engagement Ring'},
-                    {ima:'./images/Delilah.jpg',title:'Delilah'},
-                    {ima:'./images/Paige.jpg',title:'Paige'},
-                    {ima:'./images/Courtney.jpg',title:'Courtney'},
-                    {ima:'./images/Hallo_ring',title:'Chantal'},
+                    {ima:'./images/Hallo_ring',title:'Catalina', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/shopbystylesima2.svg',title:'Delilah'},
+                    {ima:'./images/shopbystylesima3.svg',title:'Paige'},
+                    {ima:'./images/shopbystylesima4.svg',title:'Country'},
+                    {ima:'./images/shopbystylesima3.svg',title:'Chevron'},
 
                 ]
             }
@@ -558,7 +557,7 @@
 <script>
     $(document).ready(function(){
         $('.bestSellers').slick({
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             arrows:false,

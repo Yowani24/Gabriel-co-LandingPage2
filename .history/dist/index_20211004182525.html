@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    <!-- <section id="Best_sellers">
+    <section id="Best_sellers">
         <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Best Sellers</h1>
         <div class="BraceletSlide">
             <div class="tw-border tw-p-1 tw-m-2 tw-text-center" v-for="item in items">
@@ -128,18 +128,18 @@
         <div class="tw-flex tw-justify-center tw-py-3 md:tw-mt-5">
             <button class="tw-border tw-border-gray-600 tw-font-bold tw-text-gray-600 tw-py-3 tw-px-10 tw-rounded-md tw-text-xs md:tw-text-base md:tw-font-semibold">Shop All Best Sellers</button>
         </div>
-    </section> -->
+    </section>
 
-    <section class="tw-h-72 tw-mt-5 tw-mb-28 md:tw-flex md:tw-justify-between lg:tw-px-5">
-        <div class="tw-m-2 md:tw-pl-2 md:tw-pb-10 lg:tw-flex lg:tw-flex-col md:tw-justify-end md:tw-items-start">
+    <section class="tw-bg-red-400 tw-mt-5 tw-mb-28 md:tw-flex md:tw-justify-between lg:tw-px-5">
+        <div class="tw-bg-green-400 tw-m-2 md:tw-w-[30%] md:tw-pl-2 lg:tw-flex lg:tw-flex-col md:tw-justify-end md:tw-items-start">
             <h2 class="loraFont tw-text-xl tw-text-center tw-mb-5 md:tw-text-left md:tw-text-4xl">Best Sellers</h2>
             <p class="tw-text-xs tw-text-center tw-px-10 md:tw-text-left md:tw-p-0 md:tw-text-base md:tw-text-left">Shop our curated collection of beloved favorites and bestsellers.</p>
         </div>
-        <div class="bestSellers md:tw-w-3/4" id="bestSellers">
+        <div class="bestSellers tw-bg-yellow-400 md:tw-w-3/4" id="bestSellers">
             <div v-for="item in items" class="bestSelerList tw-m-2">
                 <img class="md:tw-w-full" :src="item.ima" alt="">
                 <p class="tw-text-center tw-mt-2 md:tw-text-2xl">{{item.title}}</p>
-                <p class="tw-hidden tw-text-center tw-mt-1">{{item.desc}}</p>
+                <p class="tw-text-center tw-mt-1">{{item.desc}}</p>
             </div>
         </div>
     </section>
@@ -384,7 +384,6 @@
 
     </section>
 
-
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script>
         var app = new Vue({
@@ -446,11 +445,11 @@
             el:'#bestSellers',
             data: {
                 items: [
-                    {ima:'./images/Catalina.jpg',title:'Catalina', desc:'Twisted Diamond Engagement Ring'},
-                    {ima:'./images/Delilah.jpg',title:'Delilah'},
-                    {ima:'./images/Paige.jpg',title:'Paige'},
-                    {ima:'./images/Courtney.jpg',title:'Courtney'},
-                    {ima:'./images/Hallo_ring',title:'Chantal'},
+                    {ima:'./images/shopbystylesima1.svg',title:'Catalina', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/shopbystylesima2.svg',title:'Delilah'},
+                    {ima:'./images/shopbystylesima3.svg',title:'Paige'},
+                    {ima:'./images/shopbystylesima4.svg',title:'Country'},
+                    {ima:'./images/shopbystylesima3.svg',title:'Chevron'},
 
                 ]
             }
@@ -558,7 +557,7 @@
 <script>
     $(document).ready(function(){
         $('.bestSellers').slick({
-            infinite: false,
+            infinite: true,
             slidesToShow: 4,
             slidesToScroll: 1,
             arrows:false,

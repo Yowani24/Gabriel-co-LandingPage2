@@ -20,7 +20,15 @@ body{
 .bracelets_bg{
     background: #812E20;
 }
-
+.bestSelerList:hover, p:first-child{
+    color: red;
+}
+.bestSelerList .description{
+    display: none;
+}
+.bestSelerList:hover, .description{
+    display: flex;
+}
 .necklacesBannerBg{
     background: rgb(221,202,189);
 

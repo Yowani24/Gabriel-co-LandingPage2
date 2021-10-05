@@ -4,7 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      textColor: ['group-hover'],
+      spacing: {
+        '[70%]':'70%',
+        '[30%]':'30%',
+      }
     },
   },
   variants: {
