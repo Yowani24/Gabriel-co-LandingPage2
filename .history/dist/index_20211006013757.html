@@ -48,6 +48,9 @@
         
     </script>
     <style>
+        .bestSelerList{
+            transition: .5s;
+        }
         .bestSelerList:hover .best_title{
             color: red;
         }
@@ -520,10 +523,10 @@
             data: {
                 items: [
                     {ima:'./images/Catalina.jpg',title:'Catalina', desc:'Twisted Diamond Engagement Ring'},
-                    {ima:'./images/Delilah.jpg',title:'Delilah', desc:'Twisted Diamond Engagement Ring'},
-                    {ima:'./images/Paige.jpg',title:'Paige', desc:'Twisted Diamond Engagement Ring'},
-                    {ima:'./images/Courtney.jpg',title:'Courtney', desc:'Twisted Diamond Engagement Ring'},
-                    {ima:'./images/Hallo_ring',title:'Chantal', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/Delilah.jpg',title:'Delilah'},
+                    {ima:'./images/Paige.jpg',title:'Paige'},
+                    {ima:'./images/Courtney.jpg',title:'Courtney'},
+                    {ima:'./images/Hallo_ring',title:'Chantal'},
 
                 ]
             }
@@ -635,8 +638,8 @@
             slidesToShow: 4,
             slidesToScroll: 1,
             arrows:true,
-            prevArrow:"<img class='tw-absolute tw-z-50 tw-w-12 md:tw-mt-80 md:tw-ml-72 a-left control-c prev slick-prev' src='./images/leftarrow.png'>",
-            nextArrow:"<img class='tw-absolute tw-50 tw-w-12 md:tw-mt-14 md:tw-ml-96 tw-r-0 a-right control-c next slick-next' src='./images/rightarrow.png'>",
+            prevArrow:"<img class='tw-absolute tw-z-50 tw-w-12 md:tw-mt-72 md:tw-ml-72 a-left control-c prev slick-prev' src='./images/leftarrow.png'>",
+            nextArrow:"<img class='tw-absolute tw-50 tw-w-12 md:tw-mt-5 md:tw-ml-96 tw-r-0 a-right control-c next slick-next' src='./images/rightarrow.png'>",
             responsive: [
                 {
                     breakpoint: 1024,
