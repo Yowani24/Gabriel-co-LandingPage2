@@ -31,7 +31,7 @@ body{
 .Ringzbanner{
     background: rgb(245,245,245);
 }
-#dropdownContent{
+.dropdownContent{
     display: none;
 }
 

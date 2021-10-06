@@ -20,21 +20,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script>
         function CloseSideBar() {
             document.getElementById("sideBar").style.marginLeft = "-100%";
         }
         function OpenSideBar() {
             document.getElementById("sideBar").style.marginLeft = "0%";
-        }            
-
+        }
 
 
         function DropdownContent() {
-            const contentDown = document.getElementById("dropdownContent");
-            const plusMinus = document.getElementById("plusMinus");
+            var contentDown = document.getElementById("dropdownContent");
+            var plusMinus = document.getElementById("plusMinus");
 
             if(contentDown.style.display === "block"){
                 contentDown.style.display = "none";
@@ -44,19 +41,7 @@
                 plusMinus.innerText = "-"
             }
         }
-        
-        
     </script>
-    <style>
-        .dropdownbox{
-
-        }
-        @media(max-width:640px){
-            .dropdownbox{
-                width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
     <header class="tw-px-5 tw-py-5 tw-border-b-2">
@@ -300,51 +285,51 @@
             </div>
     
             
-                <div id="alvo" class="alvo">
+                <div class="">
                     <h3 class="loraFont tw-mb-5 tw-text-xl md:tw-text-4xl">Frequently Asked Questions</h3>
-                    <div class="dropdownbox tw-border  tw-cursor-pointer tw-p-2">
-                        <div class="tw-flex tw-justify-between tw-items-center">
-                            <div class="tw-text-sm md:tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
+                    <div style="width: 600px;" class="tw-border  tw-cursor-pointer tw-p-2" onclick="DropdownContent()">
+                        <div class="tw-flex tw-justify-between">
+                            <div class="tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
                             <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
                         </div>
                         <p id="dropdownContent" class="tw-text-base tw-mt-2">The budget you decide on for an engagement is a personal decision. There are many schools of thought on this: for examle, some say you should spend around two months worth of your salary. But truthfully when buying an engagement ring, there is no one-size-fits-all budget. Instead, find a style and price that you both love and feel comfortable with and the decision on how much to spend on a wedding ring will come easily.</p>
                     </div>
 
-                    <div class="dropdownbox tw-border tw-my-3 tw-cursor-pointer tw-p-2">
-                        <div class="tw-flex tw-justify-between tw-items-center">
-                            <div class="tw-text-sm md:tw-text-lg tw-font-semibold">What hand and finger does engagement go on?</div>
-                            <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
-                        </div>
-                        <p id="dropdownContent" class="tw-text-base tw-mt-2">Is it brtter to buy engagement rings online?</p>
-                    </div>
-
-                    <div class="dropdownbox tw-border tw-cursor-pointer tw-p-2">
-                        <div class="tw-flex tw-justify-between tw-items-center">
-                            <div class="tw-text-sm md:tw-text-lg tw-font-semibold">Is it better to buy engagement rings online?</div>
+                    <div style="width: 600px;" class="tw-border tw-my-3 tw-cursor-pointer tw-p-2" onclick="DropdownContent()">
+                        <div class="tw-flex tw-justify-between">
+                            <div class="tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
                             <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
                         </div>
                         <p id="dropdownContent" class="tw-text-base tw-mt-2">The budget you decide on for an engagement is a personal decision. There are many schools of thought on this: for examle, some say you should spend around two months worth of your salary. But truthfully when buying an engagement ring, there is no one-size-fits-all budget. Instead, find a style and price that you both love and feel comfortable with and the decision on how much to spend on a wedding ring will come easily.</p>
                     </div>
 
-                    <div class="dropdownbox tw-border tw-my-3 tw-cursor-pointer tw-p-2">
-                        <div class="tw-flex tw-justify-between tw-items-center">
-                            <div class="tw-text-sm md:tw-text-lg tw-font-semibold">How many carats should an engagement ring be?</div>
+                    <div style="width: 600px;" class="tw-border  tw-cursor-pointer tw-p-2" onclick="DropdownContent()">
+                        <div class="tw-flex tw-justify-between">
+                            <div class="tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
+                            <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
+                        </div>
+                        <p id="dropdownContent" class="tw-text-base tw-mt-2">The budget you decide on for an engagement is a personal decision. There are many schools of thought on this: for examle, some say you should spend around two months worth of your salary. But truthfully when buying an engagement ring, there is no one-size-fits-all budget. Instead, find a style and price that you both love and feel comfortable with and the decision on how much to spend on a wedding ring will come easily.</p>
+                    </div>
+
+                    <div style="width: 600px;" class="tw-border  tw-cursor-pointer tw-p-2" onclick="DropdownContent()">
+                        <div class="tw-flex tw-justify-between">
+                            <div class="tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
                             <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
                         </div>
                         <p id="dropdownContent" class="tw-text-base tw-mt-2">The budget you decide on for an engagement is a personal decision. There are many schools of thought on this: for examle, some say you should spend around two months worth of your salary. But truthfully when buying an engagement ring, there is no one-size-fits-all budget. Instead, find a style and price that you both love and feel comfortable with and the decision on how much to spend on a wedding ring will come easily.</p>
                     </div>
                     
-                    <div class="dropdownbox tw-border tw-cursor-pointer tw-p-2">
-                        <div class="tw-flex tw-justify-between tw-items-center">
-                            <div class="tw-text-sm md:tw-text-lg tw-font-semibold">Should we buy an engagement ring together?</div>
+                    <div style="width: 600px;" class="tw-border  tw-cursor-pointer tw-p-2" onclick="DropdownContent()">
+                        <div class="tw-flex tw-justify-between">
+                            <div class="tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
                             <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
                         </div>
                         <p id="dropdownContent" class="tw-text-base tw-mt-2">The budget you decide on for an engagement is a personal decision. There are many schools of thought on this: for examle, some say you should spend around two months worth of your salary. But truthfully when buying an engagement ring, there is no one-size-fits-all budget. Instead, find a style and price that you both love and feel comfortable with and the decision on how much to spend on a wedding ring will come easily.</p>
                     </div>
 
-                    <div class="dropdownbox tw-border tw-mt-3 tw-cursor-pointer tw-p-2">
-                        <div class="tw-flex tw-justify-between tw-items-center">
-                            <div class="tw-text-sm md:tw-text-lg tw-font-semibold">Does an engagement ring have to be a diamond?</div>
+                    <div style="width: 600px;" class="tw-border  tw-cursor-pointer tw-p-2" onclick="DropdownContent()">
+                        <div class="tw-flex tw-justify-between">
+                            <div class="tw-text-lg tw-font-semibold">How much to spend on an engagement ring?</div>
                             <span id="plusMinus" class="tw-text-xl tw-font-semibold">+</span>
                         </div>
                         <p id="dropdownContent" class="tw-text-base tw-mt-2">The budget you decide on for an engagement is a personal decision. There are many schools of thought on this: for examle, some say you should spend around two months worth of your salary. But truthfully when buying an engagement ring, there is no one-size-fits-all budget. Instead, find a style and price that you both love and feel comfortable with and the decision on how much to spend on a wedding ring will come easily.</p>

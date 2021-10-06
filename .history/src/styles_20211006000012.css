@@ -34,6 +34,9 @@ body{
 #dropdownContent{
     display: none;
 }
+.toggleDisplay{
+    display: block;
+}
 
 @media (max-width:640px){
     .current_span{

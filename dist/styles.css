@@ -32297,6 +32297,10 @@ body{
   background: rgb(245,245,245);
 }
 
+#dropdownContent{
+  display: none;
+}
+
 @media (max-width:640px){
   .current_span{
     display: none;

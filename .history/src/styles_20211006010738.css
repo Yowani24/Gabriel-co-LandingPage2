@@ -39,4 +39,7 @@ body{
     .current_span{
         display: none;
     }
+    .dropdownbox{
+        width: 100%;
+    }
 }
