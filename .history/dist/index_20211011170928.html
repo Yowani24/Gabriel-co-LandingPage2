@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:wght@200&family=Nunito:wght@200&display=swap" rel="stylesheet">
 
+    <!-- -------------------VUEJS CDN------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
     <!-- ---------------------------SLICK---------------------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -443,79 +446,28 @@
         </div>
     </div>
 
-    
-
     <section class="tw-h-80 tw-mt-5 tw-mb-28 md:tw-flex md:tw-justify-between lg:tw-px-5">
         <div class="tw-m-2 md:tw-pl-2 md:tw-pb-10 lg:tw-flex lg:tw-flex-col md:tw-justify-end md:tw-items-start">
             <h2 class="loraFont tw-text-2xl tw-text-center tw-mb-5 md:tw-text-left md:tw-text-4xl">Best Sellers</h2>
             <p class="tw-text-base tw-text-center tw-px-10 md:tw-text-left md:tw-p-0 md:tw-text-base md:tw-text-left">Shop our curated collection of beloved favorites and bestsellers.</p>
         </div>
         <div class="bestSellers md:tw-w-3/4" id="bestSellers">
-            <div class="bestSelerList tw-m-2">
-                <img class="md:tw-w-full" src="./images/Catalina.jpg" alt="">
-                <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">Catalina</p>
-                <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring'</p>
-            </div>
-            <div class="bestSelerList tw-m-2">
-                <img class="md:tw-w-full" src="./images/Delilah.jpg" alt="">
-                <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">Delilah</p>
-                <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring</p>
-            </div>
-            <div class="bestSelerList tw-m-2">
-                <img class="md:tw-w-full" src="./images/Paige.jpg" alt="">
-                <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">Paige</p>
-                <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring</p>
-            </div>
-            <div class="bestSelerList tw-m-2">
-                <img class="md:tw-w-full" src="./images/Courtney.jpg" alt="">
-                <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">Courtney</p>
-                <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring</p>
-            </div>
-            <div class="bestSelerList tw-m-2">
-                <img class="md:tw-w-full" src="./images/Hallo_ring" alt="">
-                <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">Chantal</p>
-                <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring</p>
+            <div v-for="item in items" class="bestSelerList tw-m-2">
+                <img class="md:tw-w-full" :src="item.ima" alt="">
+                <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">{{item.title}}</p>
+                <p class="best_desc tw-hidden tw-text-center tw-mt-1">{{item.desc}}</p>
             </div>
         </div>
     </section>
-    
 
     <section>
         <div class="md:tw-w-8/12 md:tw-mx-auto">
             <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop By Style</h1>
 
             <div id="shopByStyle" class="tw-flex tw-justify-center tw-flex-wrap">
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Double Halo</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Three Stone</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Straight</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Solitaire</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Three Stone Halo</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Split Shank</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Free Form</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Wide band</p>
+                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center" v-for="data in images">
+                    <img class="tw-w-16 md:tw-w-20" :src="data.ima" alt="">
+                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">{{data.desc}}</p>
                 </div>
             </div>
 
@@ -533,35 +485,33 @@
             <p class="tw-text-white tw-text-xs md:tw-text-base tw-cursor-pointer tw-underline tw-text-center md:tw-text-left tw-font-light md:tw-font-semibold tw-w-max">Shop Bracelets ></p>
         </span>
     </section>
-    
 
     <section id="Shop_by_Fine_Metal">
         <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop by Metal</h1>
         <div class="tw-flex tw-flex-wrap tw-justify-center">
             <div class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-border tw-py-1 md:tw-py-5 tw-m-1 tw-text-center tw-w-24 md:tw-w-44 md:tw-m-2" v-for="item in items">
-                <img class="tw-mb-2 tw-w-16 md:tw-w-20" src="./images/finemetal1.svg" alt="Gold Metals">
-                <h5 class="tw-text-xs md:tw-text-2xl md:tw-mt-3">White Gold</h5>
-            </div>
-            <div class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-border tw-py-1 md:tw-py-5 tw-m-1 tw-text-center tw-w-24 md:tw-w-44 md:tw-m-2">
-                <img class="tw-mb-2 tw-w-16 md:tw-w-20" src="./images/finemetal2.svg" alt="Gold Metals">
-                <h5 class="tw-text-xs md:tw-text-2xl md:tw-mt-3">Yellow Gold</h5>
-            </div>
-            <div class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-border tw-py-1 md:tw-py-5 tw-m-1 tw-text-center tw-w-24 md:tw-w-44 md:tw-m-2">
-                <img class="tw-mb-2 tw-w-16 md:tw-w-20" src="./images/finemetal3.svg" alt="Gold Metals">
-                <h5 class="tw-text-xs md:tw-text-2xl md:tw-mt-3">Rose Gold</h5>
-            </div>
-            <div class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-border tw-py-1 md:tw-py-5 tw-m-1 tw-text-center tw-w-24 md:tw-w-44 md:tw-m-2">
-                <img class="tw-mb-2 tw-w-16 md:tw-w-20" src="./images/finemetal4.svg" alt="Gold Metals">
-                <h5 class="tw-text-xs md:tw-text-2xl md:tw-mt-3">Silver</h5>
-            </div>
-            <div class="tw-flex tw-flex-col tw-justify-center tw-items-center tw-border tw-py-1 md:tw-py-5 tw-m-1 tw-text-center tw-w-24 md:tw-w-44 md:tw-m-2">
-                <img class="tw-mb-2 tw-w-16 md:tw-w-20" src="./images/finemetal5.svg" alt="Gold Metals">
-                <h5 class="tw-text-xs md:tw-text-2xl md:tw-mt-3">Mixed</h5>
+                <img class="tw-mb-2 tw-w-16 md:tw-w-20" :src="item.ima" alt="Gold Metals">
+                <h5 class="tw-text-xs md:tw-text-2xl md:tw-mt-3">{{item.title}}</h5>
             </div>
         </div>
         
     </section>
+
+    <!-- ======================================================================== -->
     
+    var app = new Vue({
+        el:'#Shop_by_Price_Range',
+        data: {
+            items: [
+                {price:''},
+                {price:''},
+                {price:''},
+                {price:''},
+            ]
+        }
+    });
+     
+    <!-- ===================================================================== -->
 
     <section id="Shop_by_Price_Range">
         <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop by Price</h1>
@@ -892,20 +842,84 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script>
+        
+        var app = new Vue({
+            el:'#Best_sellers',
+            data: {
+                items: [
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
 
-        // var app = new Vue({
-        //     el:'#commitment',
-        //     data: {
-        //         items: [
-        //             {desc:'Life Warranty for any manufacturing on registered styles'},
-        //             {desc:'One-year coverage of damages from normal wear & tear on registered styles'},
-        //             {desc:'Certificate of Authenticity with unique serial number'},
-        //             {desc:'Complimentary cleaning twice a year at a retail partner near you'},
-        //             {desc:'Free Shipping to anywhere within the U.S'},
-        //             {desc:'30 Day Hassle-Free Returns'}
-        //         ]
-        //     }
-        // });
+                ]
+            }
+        });
+        
+
+        var app = new Vue({
+            el: '#shopByStyle',
+            data: {
+                images: [
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Halo'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Double Halo'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Three Stone'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Straight'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Solitaire'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Three Stone Halo'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Split Shank'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Free Form'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Wide band'},
+                        
+                ]
+            }
+        });
+
+        var app = new Vue({
+            el:'#bestSellers',
+            data: {
+                items: [
+                    {ima:'./images/Catalina.jpg',title:'Catalina', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/Delilah.jpg',title:'Delilah', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/Paige.jpg',title:'Paige', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/Courtney.jpg',title:'Courtney', desc:'Twisted Diamond Engagement Ring'},
+                    {ima:'./images/Hallo_ring',title:'Chantal', desc:'Twisted Diamond Engagement Ring'},
+
+                ]
+            }
+        });
+        
+
+        var app = new Vue({
+            el:'#Shop_by_Fine_Metal',
+            data: {
+                items: [
+                    {ima:'./images/finemetal1.svg',title:'White Gold'},
+                    {ima:'./images/finemetal2.svg',title:'Yellow Gold'},
+                    {ima:'./images/finemetal3.svg',title:'Rose Gold'},
+                    {ima:'./images/finemetal4.svg',title:'Silver'},
+                    {ima:'./images/finemetal5.svg',title:'Mixed'},
+                ]
+            }
+        });
+        
+
+        
+
+        var app = new Vue({
+            el:'#commitment',
+            data: {
+                items: [
+                    {desc:'Life Warranty for any manufacturing on registered styles'},
+                    {desc:'One-year coverage of damages from normal wear & tear on registered styles'},
+                    {desc:'Certificate of Authenticity with unique serial number'},
+                    {desc:'Complimentary cleaning twice a year at a retail partner near you'},
+                    {desc:'Free Shipping to anywhere within the U.S'},
+                    {desc:'30 Day Hassle-Free Returns'}
+                ]
+            }
+        });
         
         
     </script>

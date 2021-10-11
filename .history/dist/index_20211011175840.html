@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:wght@200&family=Nunito:wght@200&display=swap" rel="stylesheet">
 
+    <!-- -------------------VUEJS CDN------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
     <!-- ---------------------------SLICK---------------------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -679,6 +682,8 @@
         </span>
     </section>
 
+    <!-- ========================================================================= -->
+
     <section class="commitment">
         
         <div class="tw-mt-12 tw-flex tw-flex-col-reverse md:tw-flex-row-reverse md:tw-justify-center md:tw-items-center md:tw-w-4/5 md:tw-mx-auto">
@@ -688,7 +693,7 @@
                     
                     <div class="tw-flex tw-items-center tw-my-3 md:tw-my-5">
                         <img class="tw-w-6" src="./images/check-circlegray.svg" alt="">
-                        <p class="tw-ml-2 tw-text-sm tw-tracking-wide md:tw-text-base">Life Warranty</p>
+                        <p class="tw-ml-2 tw-text-sm tw-tracking-wide md:tw-text-base">Life Warranty <span class="tw-hidden md:tw-flex">for any manufacturing on registered styles</span></p>
                     </div>
                     <div class="tw-flex tw-items-center tw-my-3 md:tw-my-5">
                         <img class="tw-w-6" src="./images/check-circlegray.svg" alt="">
@@ -893,19 +898,19 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script>
 
-        // var app = new Vue({
-        //     el:'#commitment',
-        //     data: {
-        //         items: [
-        //             {desc:'Life Warranty for any manufacturing on registered styles'},
-        //             {desc:'One-year coverage of damages from normal wear & tear on registered styles'},
-        //             {desc:'Certificate of Authenticity with unique serial number'},
-        //             {desc:'Complimentary cleaning twice a year at a retail partner near you'},
-        //             {desc:'Free Shipping to anywhere within the U.S'},
-        //             {desc:'30 Day Hassle-Free Returns'}
-        //         ]
-        //     }
-        // });
+        var app = new Vue({
+            el:'#commitment',
+            data: {
+                items: [
+                    {desc:''},
+                    {desc:'One-year coverage of damages from normal wear & tear on registered styles'},
+                    {desc:'Certificate of Authenticity with unique serial number'},
+                    {desc:'Complimentary cleaning twice a year at a retail partner near you'},
+                    {desc:'Free Shipping to anywhere within the U.S'},
+                    {desc:'30 Day Hassle-Free Returns'}
+                ]
+            }
+        });
         
         
     </script>

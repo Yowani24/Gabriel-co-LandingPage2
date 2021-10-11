@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito+Sans:wght@200&family=Nunito:wght@200&display=swap" rel="stylesheet">
 
+    <!-- -------------------VUEJS CDN------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
     <!-- ---------------------------SLICK---------------------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -443,7 +446,11 @@
         </div>
     </div>
 
+    <!-- ===================================================================== -->
     
+    
+
+    <!-- ===================================================================== -->
 
     <section class="tw-h-80 tw-mt-5 tw-mb-28 md:tw-flex md:tw-justify-between lg:tw-px-5">
         <div class="tw-m-2 md:tw-pl-2 md:tw-pb-10 lg:tw-flex lg:tw-flex-col md:tw-justify-end md:tw-items-start">
@@ -467,7 +474,7 @@
                 <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring</p>
             </div>
             <div class="bestSelerList tw-m-2">
-                <img class="md:tw-w-full" src="./images/Courtney.jpg" alt="">
+                <img class="md:tw-w-full" :src="./images/Courtney.jpg" alt="">
                 <p class="best_title tw-text-center tw-mt-2 md:tw-text-xl">Courtney</p>
                 <p class="best_desc tw-hidden tw-text-center tw-mt-1">Twisted Diamond Engagement Ring</p>
             </div>
@@ -478,44 +485,15 @@
             </div>
         </div>
     </section>
-    
 
     <section>
         <div class="md:tw-w-8/12 md:tw-mx-auto">
             <h1 class="loraFont tw-text-center tw-mt-10 tw-mb-5 tw-text-2xl md:tw-text-4xl">Shop By Style</h1>
 
             <div id="shopByStyle" class="tw-flex tw-justify-center tw-flex-wrap">
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Double Halo</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Three Stone</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Straight</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Solitaire</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Three Stone Halo</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Split Shank</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Free Form</p>
-                </div>
-                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center">
-                    <img class="tw-w-16 md:tw-w-20" src="https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg" alt="">
-                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">Wide band</p>
+                <div class="tw-w-28 tw-border tw-p-1 tw-m-2 md:tw-mx-2 tw-flex tw-flex-col tw-justify-center tw-items-center" v-for="data in images">
+                    <img class="tw-w-16 md:tw-w-20" :src="data.ima" alt="">
+                    <p class="tw-text-sm md:tw-text-base tw-w-20 md:tw-w-auto tw-text-center tw-mt-2">{{data.desc}}</p>
                 </div>
             </div>
 
@@ -892,20 +870,56 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script>
+        
+        var app = new Vue({
+            el:'#Best_sellers',
+            data: {
+                items: [
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
+                    {ima:'./images/Bestselleritems.svg',title:'NK5913W84JJ', desc:'18K White Gold Open Diamond Cluster Collar Necklace', price:'$ 1000'},
 
-        // var app = new Vue({
-        //     el:'#commitment',
-        //     data: {
-        //         items: [
-        //             {desc:'Life Warranty for any manufacturing on registered styles'},
-        //             {desc:'One-year coverage of damages from normal wear & tear on registered styles'},
-        //             {desc:'Certificate of Authenticity with unique serial number'},
-        //             {desc:'Complimentary cleaning twice a year at a retail partner near you'},
-        //             {desc:'Free Shipping to anywhere within the U.S'},
-        //             {desc:'30 Day Hassle-Free Returns'}
-        //         ]
-        //     }
-        // });
+                ]
+            }
+        });
+        
+
+        var app = new Vue({
+            el: '#shopByStyle',
+            data: {
+                images: [
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Halo'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Double Halo'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Three Stone'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Straight'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Solitaire'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Three Stone Halo'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Split Shank'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Free Form'},
+                    {ima:'https://image.brilliantearth.com/static/img/channel/engagement/ring-design-styles/ir295/icon/Solitaire.svg', desc:'Wide band'},
+                        
+                ]
+            }
+        });
+
+        
+        
+
+        var app = new Vue({
+            el:'#commitment',
+            data: {
+                items: [
+                    {desc:'Life Warranty for any manufacturing on registered styles'},
+                    {desc:'One-year coverage of damages from normal wear & tear on registered styles'},
+                    {desc:'Certificate of Authenticity with unique serial number'},
+                    {desc:'Complimentary cleaning twice a year at a retail partner near you'},
+                    {desc:'Free Shipping to anywhere within the U.S'},
+                    {desc:'30 Day Hassle-Free Returns'}
+                ]
+            }
+        });
         
         
     </script>
